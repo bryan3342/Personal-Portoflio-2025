@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Mejia Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="main-nav">
+        <div class="logo"> 
+            BRYAN MEJIA 
+        </div>
+        <div> 
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div> 
+    </nav>
+    <nav id="content-nav">
+        <div class="logo"> BRYAN MEJIA</div>
+        <div class="content-menu">
+            <div class="content-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="content-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile__picture-container">
+            <img src="./assets/bryan-profile.png" alt="Bryan Mejia's Profile Picture" class="profile__picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p> 
+            <h1 class="section__title">Bryan Mejia</h1>
+            <p class="section__text__p2">Data Scientist | Software Engineer</p>
+            <!-- <p class="section__description">I am a Full Stack Developer with a passion for creating dynamic and responsive web applications. I specialize in both front-end and back-end development, ensuring a seamless user experience.</p> -->
+            <div class="btn-container">
+                <button class="btn btn-primary" 
+                    onclick="window.open('./assets/resume-example.pdf')">
+                    View Resume
+                </button>
+                <button class="btn btn-secondary" 
+                    onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Bryan_LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/'" />
+                <img src="./assets/github.png" alt="Bryan_GitHub" class="icon" onclick="location.href='https://www.github.com/'" />
+           
+            </div>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
