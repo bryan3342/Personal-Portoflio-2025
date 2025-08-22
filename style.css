@@ -23,7 +23,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #FFFF;
+    background: #ffffff;
  }
 
 
@@ -386,6 +386,7 @@ section {
 }
 
 .article-container {
+    background: #ffff;
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
@@ -413,7 +414,7 @@ article .icon {
 
 .color-container {
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: white;
 }
 
 .project-pic {
