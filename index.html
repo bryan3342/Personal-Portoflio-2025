@@ -7,63 +7,298 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
-<body>
-    <nav id="main-nav">
-        <div class="logo"> 
-            BRYAN MEJIA 
-        </div>
-        <div> 
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div> 
-    </nav>
-    <nav id="content-nav">
-        <div class="logo"> BRYAN MEJIA</div>
-        <div class="content-menu">
-            <div class="content-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <body>
+        <!-- Main Nav completed -->
+        <nav id="main-nav">
+            <div class="logo"> 
+                BRYAN MEJIA 
             </div>
-            <div class="content-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <div> 
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-switch"></button></li>
+                </ul>
+            </div> 
+            
+        </nav>
+        <!-- Content nav completed -->
+        <nav id="content-nav">
+            <div class="logo"> BRYAN MEJIA</div>
+            <div class="content-menu">
+                <div class="content-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="content-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
             </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="profile__picture-container">
-            <img src="./assets/bryan-profile.png" alt="Bryan Mejia's Profile Picture" class="profile__picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p> 
-            <h1 class="section__title">Bryan Mejia</h1>
-            <p class="section__text__p2">Data Scientist | Software Engineer</p>
-            <!-- <p class="section__description">I am a Full Stack Developer with a passion for creating dynamic and responsive web applications. I specialize in both front-end and back-end development, ensuring a seamless user experience.</p> -->
-            <div class="btn-container">
-                <button class="btn btn-primary" 
-                    onclick="window.open('./assets/resume-example.pdf')">
-                    View Resume
-                </button>
-                <button class="btn btn-secondary" 
-                    onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
+        </nav>
+        <!-- Profile Section completed -->
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/bryan-profile.png" alt="Bryan Mejia's Profile Picture" class="profile__picture">
             </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="Bryan_LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/'" />
-                <img src="./assets/github.png" alt="Bryan_GitHub" class="icon" onclick="location.href='https://www.github.com/'" />
-           
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p> 
+                <h1 class="section__title">Bryan Mejia</h1>
+                <p class="section__text__p2">Data Scientist | Software Engineer</p>
+                <!-- <p class="section__description">I am a Full Stack Developer with a passion for creating dynamic and responsive web applications. I specialize in both front-end and back-end development, ensuring a seamless user experience.</p> -->
+                <div class="btn-container">
+                    <button class="btn btn-primary" 
+                        onclick="window.open('./assets/resume-example.pdf')">
+                        View Resume
+                    </button>
+                    <button class="btn btn-secondary" 
+                        onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="Bryan_LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/bryan-mejia-32749327b/', '_blank')" />
+                    <img src="./assets/github.png" alt="Bryan_GitHub" class="icon" onclick="window.open('https://github.com/bryan3342', '_blank')" />
+            
+                </div>
             </div>
-        </div>
-    </section>
-
-<script src="script.js"></script>
-</body>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="section__title__2">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.jpg" alt="Bryan Mejia's About Picture" 
+                    class="about-pic" />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience Icon" class="icon" />
+                            <h3>Experience</h3>
+                            <p>2+ years <br /> Software Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education Icon" class="icon" />
+                            <h3>Education</h3>
+                            <p>B.A in Computer Science <br /> CUNY Queens College</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            I am a dedicated and results-driven Data Scientist and Software Engineer with a strong foundation in Python 
+                            and a passion for building robust applications that tackle real-world phenomena. With a Bachelor of Arts in 
+                            Computer Science from CUNY Queens College, I have honed my skills in both software development and data analysis.
+                            <br /><br />
+                            My experience spans over two years in software development, where I have successfully contributed to various 
+                            projects, demonstrating my ability to design, develop, and deploy robust applications. I am proficient in programming 
+                            languages such as Python, Java, and C++, and have hands-on experience with data analysis tools and machine learning libraries.
+                            <br /><br />
+                            As a Data Scientist, I excel in extracting insights from complex datasets, structuring a development plan, utilizing 
+                            statistical analysis, and building predictive models to solve the worlds questions. My expertise includes data cleaning, 
+                            feature engineering, and model evaluation, ensuring the delivery of accurate and actionable results.
+                            <br /><br />
+                            I have experience guiding teams to deliver high-quality, documented software with exceptional results. 
+                            While working with a team, I could also be a collaborative team player, fostering a positive and productive work environment. 
+                            Excellent communication skills, capable of translating technical concepts to non-technical stakeholders. 
+                            My goal is to continue growing as a Data Scientist and Software Engineer, contributing to innovative projects
+                            that make a meaningful impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'"/>
+        </section>
+        <!-- Experience Section completed  -->
+        <section id="experience">
+            <p class="section__text__p1">Exploring My</p>
+            <h1 class="section__title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title"> Data Scientist </h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>SQL</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>Anaconda</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>Microsoft Excel</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>ML Libraries</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>AWS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title"> Software Engineer  </h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>C++</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+                                <div>
+                                    <h3>Backend Development</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'"/>
+        </section>
+        <!-- Section id="projects" completed -->
+        <section id="projects"> 
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="section__title">Projects</h1>
+            <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/heartscope-icon.png" alt="Project 1" class="project-pic" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">HeartScope <br /> Full Stack Application Using Random Forest</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-primary project-btn" onclick="window.open('https://github.com/bryan3342/HeartScope/tree/final', '_blank')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-primary project-btn" onclick="window.open('./assets/IEEE-Documentation.pdf', '_blank')">
+                            IEEE Documentation
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/stress-teenager.jpg" alt="Project 2" class="project-pic" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Mental Health Data Analysis & Predictive Modeling</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-primary project-btn" onclick="window.open('https://github.com/bryan3342/Correlation-w-Depression-Students/tree/main', '_blank')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-primary project-btn" onclick="window.open('./assets/project-2.pdf', '_blank')">
+                            PowerPoint Analysis
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/cartoon-icon-with-email-spam-data-protection-alert-message-vector.jpg" alt="Project 3" class="project-pic" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Spam <br />Email Classification Analysis</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-primary project-btn" onclick="window.open('https://github.com/bryan3342/Spam-Email-Detection-Analysis','_blank')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-primary project-btn" onclick="window.open('./assets/powerpoint-demo.pdf', '_blank')">
+                            PowerPoint Analysis
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'"/>
+        </section>
+        <!-- Section id="contact" completed  -->
+        <section id="contact">
+            <p class="section__text__p1"> Get in Touch</p>
+            <h1 class="section__title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
+                    <p><a href="mailto:bryanmejiapersonal@gmail.com">bryanmejiapersonal@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+                    <p><a href="https://www.linkedin.com/in/bryan-mejia-32749327b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer completed  -->
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2025 Bryan Mejia. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
