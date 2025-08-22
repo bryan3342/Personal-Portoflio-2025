@@ -41,9 +41,16 @@
     }
     .about-containers {
         margin-top: 0;
+        flex-wrap: wrap;
     }
+    .about-details-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0;
 }
-
+}
 @media screen and (max-width:600px) {
     #contact,
     footer {
