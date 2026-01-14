@@ -422,6 +422,18 @@ article .icon {
     width: 95%;
 }
 
+.project-pic-polly {
+    border-radius: 2rem;
+    width: 95%;
+    height: 20rem
+}
+
+.project-pic-up {
+    border-radius: 2rem;
+    width: 95%;
+    height: 20rem
+}
+
 .project-title {
     margin: 1rem;
     color: black;
