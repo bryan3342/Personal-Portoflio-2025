@@ -1,7 +1,6 @@
 @media screen and (max-width:1500px) {
     #profile {
         height: 83vh;
-        margin-bottom: 6rem;
     }
     .about-containers {
         flex-wrap: wrap;
@@ -15,13 +14,17 @@
     #content-nav {
         display: flex;
     }
-    #experience, 
+    #experience,
     .experience-details-container {
         margin-top: 2rem;
     }
-    #profile,
-    .section-container {
-        display: block;
+    #profile {
+        justify-content: center;
+        gap: 4rem;
+    }
+    #about .section-container {
+        display: flex;
+        align-items: center;
     }
     .arrow {
         display: none;
@@ -33,11 +36,17 @@
     section {
         margin: 0 5%;
     }
-    .section__pic-container {
-        height: 35vh;
-        width: 35vh;
-        margin: 0 auto;
-        padding-bottom: 2rem;
+    #profile .section__pic-container {
+        height: 45vh;
+        width: 45vh;
+        margin: auto 0;
+        padding-bottom: 0;
+    }
+    #about .section__pic-container {
+        height: 300px;
+        width: 300px;
+        min-width: 250px;
+        flex-shrink: 0;
     }
     .about-containers {
         margin-top: 0;
@@ -51,14 +60,152 @@
         padding: 1rem 0;
 }
 }
+
+/* iPad Pro and larger tablets (1024px) */
+@media screen and (max-width:1024px) {
+    .carousel-container {
+        max-width: 700px;
+    }
+    .carousel-wrapper {
+        max-width: 500px;
+    }
+    .carousel-slide img {
+        height: 350px;
+    }
+    .timeline {
+        margin: 50px auto;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .container img {
+        left: 10px;
+        right: auto;
+    }
+    .right__container {
+        left: 0;
+    }
+    .left__container__arrow,
+    .right__container__arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -14px;
+        right: auto;
+    }
+    .project__text__box {
+        font-size: 14px;
+    }
+}
+
+/* iPad and iPad Mini (768px) */
+@media screen and (max-width:768px) {
+    #profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    #profile .section__pic-container {
+        width: 40vw;
+        height: 40vw;
+        max-width: 280px;
+        max-height: 280px;
+        margin: 0 auto;
+    }
+    .carousel-container {
+        max-width: 90%;
+        padding: 0 10px;
+    }
+    .carousel-wrapper {
+        max-width: 100%;
+    }
+    .carousel-slide img {
+        height: 300px;
+    }
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .about-details-container {
+        max-width: 90%;
+    }
+    .timeline {
+        margin: 40px auto;
+    }
+    .timeline::after {
+        left: 25px;
+    }
+    .container {
+        padding-left: 65px;
+        padding-right: 15px;
+    }
+    .container img {
+        left: 5px;
+    }
+    .project__text__box {
+        font-size: 13px;
+        padding: 18px;
+    }
+}
+
+/* Small phones (600px) */
 @media screen and (max-width:600px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     #contact,
     footer {
         height: 40vh;
     }
     #profile {
-        height: 83vh;
-        margin-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+    #about,
+    #experience,
+    #projects {
+        align-items: center;
+    }
+    .carousel-container {
+        max-width: 95%;
+        padding: 0 5px;
+    }
+    .carousel-slide img {
+        height: 250px;
+        border-radius: 1rem;
+    }
+    .carousel-wrapper {
+        border-radius: 1rem;
+    }
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .prev-btn {
+        left: -5px;
+    }
+    .next-btn {
+        right: -5px;
+    }
+    .carousel-dots {
+        bottom: -25px;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
     }
     article {
         font-size: 1rem;
@@ -91,10 +238,40 @@
         gap: 0.5rem;
         text-align: center;
     }
-    .section__pic-container {
-        width: auto;
-        height: 46vw;
+    #profile .section__pic-container {
+        width: 60vw;
+        height: 60vw;
+        max-width: 250px;
+        max-height: 250px;
+        margin: 0 auto;
+    }
+    #about .section-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #about .section__pic-container {
+        width: 60vw;
+        height: 60vw;
+        max-width: 250px;
+        max-height: 250px;
+        min-width: unset;
+        margin: 0 auto;
+    }
+    .about-details-container {
+        width: 100%;
+        align-items: center;
+    }
+    .experience-details-container {
+        width: 100%;
+        align-items: center;
+    }
+    .article-container {
         justify-content: center;
+    }
+    .details-container {
+        width: 90%;
+        max-width: 300px;
     }
     .section__text__p2 {
         font-size: 1.25rem;
@@ -103,9 +280,8 @@
         font-size: 2.5rem;
     }
     .section__title:hover {
-    font-size: 3.5rem;
     text-align: center;
-    background: linear-gradient(to right,blue, #feb47b);
+    background: linear-gradient(to right,yellow, #feb47b);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -114,5 +290,150 @@
     .text-container {
         text-align: justify;
     }
+    .timeline{
+        margin: 30px auto;
+        padding: 0 10px;
+        width: 100%;
+        max-width: 350px;
+    }
+    .timeline::after {
+        left: 20px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    .container img {
+        left: 5px;
+        right: auto;
+    }
+    .project__text__box {
+        font-size: 12px;
+        padding: 15px;
+    }
+    .project__text__box small{
+        margin-bottom: 10px;
+    }
+    .right__container{
+        left: 0;
+    }
+    .left__container__arrow,
+    .right__container__arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -14px;
+        right: auto;
+    }
+}
 
+/* Larger phones - iPhone Plus, Pro Max (480px) */
+@media screen and (max-width:480px) {
+    #profile .section__pic-container {
+        width: 55vw;
+        height: 55vw;
+        max-width: 220px;
+        max-height: 220px;
+    }
+    .carousel-slide img {
+        height: 220px;
+    }
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    .section__title {
+        font-size: 2rem;
+    }
+    .section__text__p1,
+    .section__text__p2 {
+        font-size: 1rem;
+    }
+    .timeline {
+        margin: 25px auto;
+        padding: 0 5px;
+        max-width: 320px;
+    }
+    .timeline::after {
+        left: 15px;
+    }
+    .container {
+        padding-left: 40px;
+        padding-right: 5px;
+    }
+    .container img {
+        left: 0;
+        width: 30px;
+    }
+    .project__text__box {
+        font-size: 11px;
+        padding: 12px;
+    }
+}
+
+/* Small phones - iPhone SE (375px) */
+@media screen and (max-width:375px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    #profile .section__pic-container {
+        width: 50vw;
+        height: 50vw;
+        max-width: 180px;
+        max-height: 180px;
+    }
+    .carousel-slide img {
+        height: 180px;
+    }
+    .carousel-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+    .carousel-dots {
+        bottom: -20px;
+        gap: 8px;
+    }
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+    .section__title {
+        font-size: 1.75rem;
+    }
+    .btn {
+        padding: 0.75rem;
+        width: 6rem;
+        font-size: 0.85rem;
+    }
+    .timeline {
+        max-width: 280px;
+    }
+    .timeline::after {
+        left: 12px;
+    }
+    .container {
+        padding-left: 35px;
+        padding-right: 5px;
+    }
+    .container img {
+        width: 25px;
+    }
+    .project__text__box {
+        font-size: 10px;
+        padding: 10px;
+    }
+    .details-container {
+        padding: 1rem;
+        max-width: 250px;
+    }
+    .experience-sub-title {
+        font-size: 1rem;
+    }
+    article {
+        width: 100%;
+        font-size: 0.85rem;
+    }
 }
