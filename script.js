@@ -1,3 +1,30 @@
+// Theme Toggle
+function toggleTheme() {
+    var html = document.documentElement;
+    var current = html.getAttribute('data-theme');
+    var next = current === 'light' ? 'dark' : 'light';
+    if (next === 'dark') {
+        html.removeAttribute('data-theme');
+        localStorage.removeItem('theme');
+    } else {
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+    }
+    updateThemeIcon();
+}
+
+function updateThemeIcon() {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    btn.innerHTML = isLight ? '&#9728;' : '&#9790;';
+}
+
+// Apply saved theme icon on load
+(function() {
+    updateThemeIcon();
+})();
+
 function toggleMenu() {
     const menu = document.querySelector(".content-links");
     const icon = document.querySelector(".content-icon");
@@ -13,7 +40,7 @@ function openPdf() {
 
 // Carousel Functionality
 let currentSlide = 0;
-const totalSlides = 4;
+const totalSlides = 3;
 
 function updateCarousel() {
     const slides = document.querySelector('.carousel-slides');

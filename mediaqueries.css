@@ -1,3 +1,12 @@
+@media screen and (min-width:1501px) {
+    .work-card {
+        width: 480px;
+    }
+    .work-card-image {
+        min-height: 240px;
+    }
+}
+
 @media screen and (max-width:1500px) {
     #profile {
         height: 83vh;
@@ -8,12 +17,14 @@
 }
 
 @media screen and (max-width:1500px) {
-    #main-nav {
-        display: none;
-    }
     #content-nav {
         display: flex;
     }
+    
+    #content-nav ul {
+        margin: 1rem 0;
+    }
+
     #experience,
     .experience-details-container {
         margin-top: 2rem;
@@ -63,36 +74,69 @@
 
 /* iPad Pro and larger tablets (1024px) */
 @media screen and (max-width:1024px) {
-    .carousel-container {
-        max-width: 700px;
+    #content-nav ul {
+        gap: 4rem;
+        font-size: 1.1rem;
     }
-    .carousel-wrapper {
-        max-width: 500px;
+    footer {
+        padding: 1.5rem;
+    }
+    footer p {
+        font-size: 0.9rem;
     }
     .carousel-slide img {
-        height: 350px;
+        height: 45vh;
+    }
+    .notable-work-container {
+        gap: 1.5rem;
+    }
+    .work-card {
+        width: 340px;
+    }
+    .work-card-title {
+        font-size: 1rem;
+    }
+    .work-card-info .technologies,
+    .work-card-info .tech-stack {
+        font-size: 0.8rem;
+    }
+    .work-card-description {
+        font-size: 0.85rem;
     }
     .timeline {
         margin: 50px auto;
     }
     .timeline::after {
         left: 31px;
+        background: linear-gradient(to bottom, #feb47b, yellow);
+        animation: moveline 6s linear forwards;
     }
     .container {
         width: 100%;
         padding-left: 80px;
         padding-right: 25px;
     }
+    .left__container,
+    .right__container {
+        padding-left: 80px;
+        padding-right: 25px;
+        left: 0;
+    }
     .container img {
         left: 10px;
         right: auto;
     }
+    .container {
+        float: none;
+        width: 100%;
+    }
+    .left__container,
     .right__container {
-        left: 0;
+        clear: both;
     }
     .left__container__arrow,
     .right__container__arrow {
-        border-right: 15px solid #fff;
+        border-right: 15px solid var(--bg-card);
         border-left: 0;
         left: -14px;
         right: auto;
@@ -100,10 +144,44 @@
     .project__text__box {
         font-size: 14px;
     }
+    /* Professional Experience - 1024px */
+    .experience-cards-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .experience-card-content {
+        padding: 1.25rem 1.5rem;
+    }
+    .experience-role {
+        font-size: 1.25rem;
+    }
+    .experience-company {
+        font-size: 1rem;
+    }
+    /* Leadership cards - 1024px */
+    #leadership .experience-card {
+        flex: 1 1 280px;
+        max-width: 340px;
+    }
+    /* Technologies - 1024px */
+    .tech-categories-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 }
 
 /* iPad and iPad Mini (768px) */
 @media screen and (max-width:768px) {
+    #content-nav ul {
+        gap: 2rem;
+        font-size: 1rem;
+    }
+    footer {
+        padding: 1.5rem 1rem;
+    }
+    footer p {
+        font-size: 0.85rem;
+    }
     #profile {
         flex-direction: column;
         align-items: center;
@@ -116,33 +194,62 @@
         max-height: 280px;
         margin: 0 auto;
     }
-    .carousel-container {
-        max-width: 90%;
-        padding: 0 10px;
-    }
-    .carousel-wrapper {
-        max-width: 100%;
-    }
     .carousel-slide img {
-        height: 300px;
+        height: 40vh;
     }
     .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
     }
+    .prev-btn {
+        left: 1rem;
+    }
+    .next-btn {
+        right: 1rem;
+    }
     .about-details-container {
         max-width: 90%;
+    }
+    .notable-work-container {
+        gap: 1.5rem;
+    }
+    .work-card {
+        width: 320px;
+    }
+    .work-card-image {
+        min-height: 180px;
+    }
+    .work-card-info {
+        padding: 15px;
+    }
+    .work-card-title {
+        font-size: 0.95rem;
+    }
+    .work-card-info .technologies,
+    .work-card-info .tech-stack {
+        font-size: 0.75rem;
+    }
+    .work-card-description {
+        font-size: 0.8rem;
     }
     .timeline {
         margin: 40px auto;
     }
     .timeline::after {
         left: 25px;
+        background: linear-gradient(to bottom, #feb47b, yellow);
+        animation: moveline 6s linear forwards;
     }
     .container {
         padding-left: 65px;
         padding-right: 15px;
+    }
+    .left__container,
+    .right__container {
+        padding-left: 65px;
+        padding-right: 15px;
+        left: 0;
     }
     .container img {
         left: 5px;
@@ -151,19 +258,94 @@
         font-size: 13px;
         padding: 18px;
     }
+    /* Professional Experience - 768px */
+    .experience-card-header {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .experience-role {
+        font-size: 1.2rem;
+    }
+    .experience-highlights li {
+        font-size: 0.9rem;
+    }
+    .tech-badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+    /* Leadership cards - 768px */
+    #leadership .experience-cards-container {
+        flex-direction: column;
+    }
+    #leadership .experience-card {
+        max-width: 550px;
+    }
+    /* Focus Areas - 768px */
+    .focus-container {
+        padding: 1.5rem 2rem;
+    }
+    .focus-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .focus-title {
+        font-size: 1.35rem;
+    }
+    .focus-items {
+        gap: 0.75rem;
+    }
+    .focus-item {
+        padding: 0.6rem 1rem;
+    }
+    .focus-item-text {
+        font-size: 0.85rem;
+    }
+    /* Technologies - 768px */
+    .tech-categories-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .tech-category-card {
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .tech-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Small phones (600px) */
 @media screen and (max-width:600px) {
+    #theme-toggle {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+    #content-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.9rem;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    footer {
+        padding: 1rem;
+        height: auto;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    #contact,
-    footer {
-        height: 40vh;
+    #contact {
+        height: auto;
+        padding-bottom: 2rem;
     }
     #profile {
         flex-direction: column;
@@ -177,16 +359,8 @@
     #projects {
         align-items: center;
     }
-    .carousel-container {
-        max-width: 95%;
-        padding: 0 5px;
-    }
     .carousel-slide img {
-        height: 250px;
-        border-radius: 1rem;
-    }
-    .carousel-wrapper {
-        border-radius: 1rem;
+        height: 35vh;
     }
     .carousel-btn {
         width: 35px;
@@ -195,13 +369,10 @@
         padding: 0.5rem;
     }
     .prev-btn {
-        left: -5px;
+        left: 0.5rem;
     }
     .next-btn {
-        right: -5px;
-    }
-    .carousel-dots {
-        bottom: -25px;
+        right: 0.5rem;
     }
     .dot {
         width: 10px;
@@ -210,33 +381,22 @@
     article {
         font-size: 1rem;
     }
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-    .about-containers, 
-    .contact-info-upper-container, 
+    .about-containers,
+    .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
-        
     }
     .contact-info-container {
         margin: 0;
+        flex-direction: column;
+        gap: 0.5rem;
     }
-    .contact-info-container a,
-    .nav-links li a {
+    .contact-text,
+    .contact-email {
         font-size: 1rem;
     }
     .experience-sub-title {
         font-size: 1.25rem;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
     }
     #profile .section__pic-container {
         width: 60vw;
@@ -290,6 +450,31 @@
     .text-container {
         text-align: justify;
     }
+    .notable-work-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .work-card {
+        width: 90%;
+        max-width: 350px;
+    }
+    .work-card-image {
+        min-height: 160px;
+    }
+    .work-card-info {
+        padding: 15px;
+    }
+    .work-card-title {
+        font-size: 0.9rem;
+    }
+    .work-card-info .technologies,
+    .work-card-info .tech-stack {
+        font-size: 0.75rem;
+    }
+    .work-card-description {
+        font-size: 0.8rem;
+    }
     .timeline{
         margin: 30px auto;
         padding: 0 10px;
@@ -298,12 +483,20 @@
     }
     .timeline::after {
         left: 20px;
+        background: linear-gradient(to bottom, #feb47b, yellow);
+        animation: moveline 6s linear forwards;
     }
     .container{
         width: 100%;
         padding-left: 50px;
         padding-right: 10px;
         box-sizing: border-box;
+    }
+    .left__container,
+    .right__container {
+        padding-left: 50px;
+        padding-right: 10px;
+        left: 0;
     }
     .container img {
         left: 5px;
@@ -316,20 +509,149 @@
     .project__text__box small{
         margin-bottom: 10px;
     }
-    .right__container{
-        left: 0;
+    .container {
+        float: none;
+    }
+    .left__container,
+    .right__container {
+        clear: both;
     }
     .left__container__arrow,
     .right__container__arrow {
-        border-right: 15px solid #fff;
+        border-right: 15px solid var(--bg-card);
         border-left: 0;
         left: -14px;
         right: auto;
+    }
+    /* Professional Experience & Leadership - 600px */
+    #professional-experience,
+    #leadership,
+    #focus-areas,
+    #technologies {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    /* Focus Areas - 600px */
+    .focus-container {
+        padding: 1.5rem;
+    }
+    .focus-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .focus-title {
+        font-size: 1.25rem;
+    }
+    .focus-subtitle {
+        font-size: 0.85rem;
+    }
+    .focus-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    .focus-item {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        padding: 0.6rem 1rem;
+    }
+    .focus-item-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .focus-item-text {
+        font-size: 0.8rem;
+    }
+    .experience-cards-container {
+        gap: 1.5rem;
+        padding: 0;
+    }
+    /* Leadership cards stack on small screens */
+    #leadership .experience-cards-container {
+        flex-direction: column;
+    }
+    #leadership .experience-card {
+        max-width: 100%;
+    }
+    .experience-card {
+        flex-direction: column;
+    }
+    .experience-card-accent {
+        width: 100%;
+        height: 4px;
+    }
+    .experience-card-content {
+        padding: 1.25rem;
+    }
+    .experience-role {
+        font-size: 1.1rem;
+    }
+    .experience-company {
+        font-size: 0.95rem;
+    }
+    .experience-date-badge {
+        padding: 0.3rem 0.75rem;
+    }
+    .experience-date-badge span {
+        font-size: 0.8rem;
+    }
+    .experience-highlights li {
+        font-size: 0.85rem;
+        padding-left: 1.25rem;
+    }
+    .experience-highlights li::before {
+        width: 6px;
+        height: 6px;
+    }
+    .tech-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+    /* Technologies - 600px */
+    .tech-categories-container {
+        padding: 0;
+        gap: 1.25rem;
+    }
+    .tech-category-card {
+        padding: 1.25rem;
+    }
+    .tech-category-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .tech-category-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    .tech-category-title {
+        font-size: 1.15rem;
+    }
+    .tech-item {
+        padding: 0.5rem 0.6rem;
+    }
+    .tech-name {
+        font-size: 0.85rem;
+    }
+    .tech-level {
+        font-size: 0.6rem;
+        padding: 0.15rem 0.4rem;
     }
 }
 
 /* Larger phones - iPhone Plus, Pro Max (480px) */
 @media screen and (max-width:480px) {
+    #content-nav ul {
+        gap: 0.8rem;
+        font-size: 0.85rem;
+    }
+    footer p {
+        font-size: 0.75rem;
+    }
+    .contact-text,
+    .contact-email {
+        font-size: 0.9rem;
+    }
     #profile .section__pic-container {
         width: 55vw;
         height: 55vw;
@@ -337,12 +659,18 @@
         max-height: 220px;
     }
     .carousel-slide img {
-        height: 220px;
+        height: 30vh;
     }
     .carousel-btn {
         width: 30px;
         height: 30px;
         font-size: 0.9rem;
+    }
+    .prev-btn {
+        left: 0.5rem;
+    }
+    .next-btn {
+        right: 0.5rem;
     }
     .section__title {
         font-size: 2rem;
@@ -351,6 +679,26 @@
     .section__text__p2 {
         font-size: 1rem;
     }
+    .work-card {
+        width: 95%;
+        max-width: 300px;
+    }
+    .work-card-image {
+        min-height: 140px;
+    }
+    .work-card-info {
+        padding: 12px;
+    }
+    .work-card-title {
+        font-size: 0.85rem;
+    }
+    .work-card-info .technologies,
+    .work-card-info .tech-stack {
+        font-size: 0.7rem;
+    }
+    .work-card-description {
+        font-size: 0.75rem;
+    }
     .timeline {
         margin: 25px auto;
         padding: 0 5px;
@@ -358,10 +706,18 @@
     }
     .timeline::after {
         left: 15px;
+        background: linear-gradient(to bottom, #feb47b, yellow);
+        animation: moveline 6s linear forwards;
     }
     .container {
         padding-left: 40px;
         padding-right: 5px;
+    }
+    .left__container,
+    .right__container {
+        padding-left: 40px;
+        padding-right: 5px;
+        left: 0;
     }
     .container img {
         left: 0;
@@ -371,12 +727,111 @@
         font-size: 11px;
         padding: 12px;
     }
+    /* Professional Experience - 480px */
+    .experience-card-content {
+        padding: 1rem;
+    }
+    .experience-role {
+        font-size: 1rem;
+    }
+    .experience-company {
+        font-size: 0.9rem;
+    }
+    .experience-highlights li {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .experience-tech-badges {
+        gap: 0.4rem;
+    }
+    .tech-badge {
+        font-size: 0.65rem;
+    }
+    /* Focus Areas - 480px */
+    .focus-container {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    .focus-icon {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0.75rem;
+    }
+    .focus-title {
+        font-size: 1.15rem;
+    }
+    .focus-subtitle {
+        font-size: 0.8rem;
+    }
+    .focus-items {
+        gap: 0.5rem;
+    }
+    .focus-item {
+        padding: 0.5rem 0.875rem;
+        border-radius: 20px;
+    }
+    .focus-item-icon {
+        width: 18px;
+        height: 18px;
+    }
+    .focus-item-text {
+        font-size: 0.75rem;
+    }
+    /* Technologies - 480px */
+    .tech-category-card {
+        padding: 1rem;
+    }
+    .tech-category-header {
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+    }
+    .tech-category-icon {
+        width: 35px;
+        height: 35px;
+    }
+    .tech-category-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+    .tech-category-title {
+        font-size: 1.05rem;
+    }
+    .tech-items-grid {
+        gap: 0.5rem;
+    }
+    .tech-item {
+        padding: 0.4rem 0.5rem;
+    }
+    .tech-name {
+        font-size: 0.8rem;
+    }
+    .tech-level {
+        font-size: 0.55rem;
+    }
 }
 
 /* Small phones - iPhone SE (375px) */
 @media screen and (max-width:375px) {
-    .logo {
-        font-size: 1.2rem;
+    #theme-toggle {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    #content-nav ul {
+        gap: 0.5rem;
+        font-size: 0.75rem;
+    }
+    footer p {
+        font-size: 0.7rem;
+    }
+    .contact-text,
+    .contact-email {
+        font-size: 0.8rem;
+    }
+    .contact-icon {
+        height: 1.2rem;
+        width: 1.2rem;
     }
     #profile .section__pic-container {
         width: 50vw;
@@ -385,16 +840,12 @@
         max-height: 180px;
     }
     .carousel-slide img {
-        height: 180px;
+        height: 25vh;
     }
     .carousel-btn {
         width: 28px;
         height: 28px;
         font-size: 0.8rem;
-    }
-    .carousel-dots {
-        bottom: -20px;
-        gap: 8px;
     }
     .dot {
         width: 8px;
@@ -413,10 +864,18 @@
     }
     .timeline::after {
         left: 12px;
+        background: linear-gradient(to bottom, #feb47b, yellow);
+        animation: moveline 6s linear forwards;
     }
     .container {
         padding-left: 35px;
         padding-right: 5px;
+    }
+    .left__container,
+    .right__container {
+        padding-left: 35px;
+        padding-right: 5px;
+        left: 0;
     }
     .container img {
         width: 25px;
@@ -435,5 +894,141 @@
     article {
         width: 100%;
         font-size: 0.85rem;
+    }
+    .work-card {
+        width: 95%;
+        max-width: 260px;
+    }
+    .work-card-image {
+        min-height: 120px;
+    }
+    .work-card-info {
+        padding: 10px;
+    }
+    .work-card-title {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    .work-card-info .technologies-line {
+        margin-bottom: 0.5rem;
+    }
+    .work-card-info .technologies,
+    .work-card-info .tech-stack {
+        font-size: 0.65rem;
+    }
+    .work-card-description {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+    /* Professional Experience - 375px */
+    .experience-cards-container {
+        gap: 1rem;
+    }
+    .experience-card {
+        box-shadow: 0 0 10px 1px rgb(232, 174, 68);
+    }
+    .experience-card-content {
+        padding: 0.875rem;
+    }
+    .experience-role {
+        font-size: 0.95rem;
+    }
+    .experience-company {
+        font-size: 0.85rem;
+    }
+    .experience-date-badge {
+        padding: 0.25rem 0.6rem;
+    }
+    .experience-date-badge span {
+        font-size: 0.7rem;
+    }
+    .experience-highlights {
+        margin-bottom: 1rem;
+    }
+    .experience-highlights li {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        padding-left: 1rem;
+        margin-bottom: 0.4rem;
+    }
+    .experience-highlights li::before {
+        width: 5px;
+        height: 5px;
+        top: 0.4rem;
+    }
+    .tech-badge {
+        font-size: 0.6rem;
+        padding: 0.15rem 0.4rem;
+    }
+    /* Focus Areas - 375px */
+    .focus-container {
+        padding: 1rem;
+    }
+    .focus-header {
+        margin-bottom: 1rem;
+    }
+    .focus-icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 0.5rem;
+    }
+    .focus-title {
+        font-size: 1.05rem;
+    }
+    .focus-subtitle {
+        font-size: 0.75rem;
+    }
+    .focus-items {
+        gap: 0.4rem;
+    }
+    .focus-item {
+        padding: 0.4rem 0.75rem;
+        max-width: 260px;
+    }
+    .focus-item-icon {
+        width: 16px;
+        height: 16px;
+    }
+    .focus-item-text {
+        font-size: 0.7rem;
+    }
+    /* Technologies - 375px */
+    .tech-categories-container {
+        gap: 1rem;
+    }
+    .tech-category-card {
+        padding: 0.875rem;
+        box-shadow: 0 0 8px 1px rgb(232, 174, 68);
+    }
+    .tech-category-header {
+        gap: 0.6rem;
+        margin-bottom: 0.875rem;
+        padding-bottom: 0.6rem;
+    }
+    .tech-category-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+    }
+    .tech-category-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+    .tech-category-title {
+        font-size: 1rem;
+    }
+    .tech-items-grid {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+    }
+    .tech-item {
+        padding: 0.5rem;
+    }
+    .tech-name {
+        font-size: 0.8rem;
+    }
+    .tech-level {
+        font-size: 0.55rem;
+        padding: 0.1rem 0.35rem;
     }
 }

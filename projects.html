@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Bryan Mejia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme');
+            if (theme) document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+    <body>
+        <!-- Main Nav -->
+        <nav id="content-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">&#9790;</button>
+        </nav>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1 class="section__title">Projects</h1>
+            <div class="timeline">
+                <div class="container right__container">
+                    <div class="project__text__box">
+                        <h2 class="project__title">Security Sentinel</h2>
+                        <small>December 2025 | <a class="repo-link" href="https://github.com/bryan3342/Security-Sentinel" target="_blank">Github Repo</a></small>
+                        <p class="project__description">
+                            <span class="technologies-line">
+                                <span class="technologies">Technologies:</span>
+                                <span class="tech-stack">Python | Docker | Node.js | Claude 3.5 Sonnet</span>
+                            </span>
+                            Python Backend: Using Node.js, LangGraph, and Docker; Security Sentinel is an autonomous, multi-agent DevSecOps system designed to move
+                            beyond simple static analysis. It functions as a "Self Healing" robotic security guardian
+                            that not only monitors repositories for vulnerabilities but also researaches and engineers
+                            verified, tested patches independently. 
+                        </p>
+                    </div>
+                </div>
+                <div class="container left__container">
+                    <div class="project__text__box">
+                        <h2 class="project__title">UP! Investments</h2>
+                        <small>HackKnight 2025 | <a class="repo-link" href="https://github.com/SharlynBarreto/UP-Investments" target="_blank">Github Repo</a> | <a class="dev-link" href="https://devpost.com/software/up-me4xbd" target="_blank">Devpost</a></small>
+                        <p class="project__description">
+                            <span class="technologies-line">
+                                <span class="technologies">Technologies:</span>
+                                <span class="tech-stack">Python | Cloudflare | RapidAPI</span>
+                            </span>
+                            Python Backend: Developed using Cloudflare, ensuring a secure and scalable
+                            connection between the user and the database. The backend handles user authentication,
+                            stores saved properties, and processes profitability calculations.
+                            Connected the Rapid's API for real-time property listings and financial data,
+                            experimented with predictive modeling to estimate potential profit margins based on local
+                            trends and housing history.
+                        </p>
+                    </div>
+                </div>
+                <div class="container right__container">
+                    <div class="project__text__box">
+                        <h2 class="project__title">Polly Debate AI</h2>
+                        <small>Hack Harvard 2025 | <a class="repo-link" href="https://github.com/bryan3342/Polly-AI" target="_blank">Github Repo</a> | <a class="dev-link" href="https://devpost.com/software/polly-ai" target="_blank">Devpost</a></small>
+                        <p class="project__description">
+                            <span class="technologies-line">
+                                <span class="technologies">Technologies:</span>
+                                <span class="tech-stack">Python | DeepFace | OpenCV | Google Cloud</span>
+                            </span>
+                            Python Backend: Used FastAPI to handle WebSocket connections and concurrent processing.
+                            Built a modular service architecture. Web app uses DeepFace and OpenCV to analyze facial
+                            expressions from video frames. Implemented librosa for pitch detection, energy measurement,
+                            and confidence scoring. Transcribes audio to text for multimodal services (Google Speech-to-Text integration).
+                            Integrated Google Gemini AI for intelligent coaching and feedback.
+                        </p>
+                    </div>
+                </div>
+                <div class="container left__container">
+                    <div class="project__text__box">
+                        <h2 class="project__title">HeartScope</h2>
+                        <small>2024 | <a class="repo-link" href="https://github.com/bryan3342/HeartScope" target="_blank">Github Repo</a></small>
+                        <p class="project__description">
+                            <span class="technologies-line">
+                                <span class="technologies">Technologies:</span>
+                                <span class="tech-stack">Java | Spring Boot | RESTful APIs | Kaggle</span>
+                            </span>
+                            Java Backend: Developed a robust backend system using Java and Spring Boot to handle user authentication,
+                            data processing, and integration with external health APIs. Implemented RESTful APIs to facilitate seamless
+                            communication between the frontend and backend services.
+                            Integrated third-party health APIs to fetch real-time health data, ensuring accurate and up-to-date
+                            information for users. Employed secure data storage practices to protect sensitive health information,
+                            adhering to industry standards and regulations.
+                        </p>
+                    </div>
+                </div>
+                <div class="container right__container">
+                    <div class="project__text__box">
+                        <h2 class="project__title">Spam Email Detection Analysis</h2>
+                        <small>2025 | <a class="repo-link" href="https://github.com/bryan3342/Spam-Email-Detection-Analysis" target="_blank">Github Repo</a></small>
+                        <p class="project__description">
+                            <span class="technologies-line">
+                                <span class="technologies">Technologies:</span>
+                                <span class="tech-stack">Python | NumPy | pandas | scikit-learn</span>
+                            </span>
+                            Python Data Science: Conducted data cleaning and preprocessing on a dataset of emails,
+                            including handling missing values, removing duplicates, and normalizing text data.
+                            Utilized Natural Language Processing (NLP) techniques such as tokenization, stemming,
+                            and TF-IDF vectorization to convert email text into numerical features suitable for machine learning models.
+                            Built and evaluated various classification models, including Logistic Regression,
+                            Decision Trees, and Random Forests, to identify spam emails with high accuracy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p>Copyright &#169; 2025 Bryan Mejia. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

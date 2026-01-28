@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Bryan Mejia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme');
+            if (theme) document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Main Nav -->
+    <nav id="content-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">&#9790;</button>
+    </nav>
+
+    <!-- Professional Experience Section -->
+    <section id="professional-experience">
+        <h1 class="section__title">Experience</h1>
+        <div class="experience-cards-container">
+
+            <div class="experience-card">
+                <div class="experience-card-accent"></div>
+                <div class="experience-card-content">
+                    <div class="experience-card-header">
+                        <div class="experience-role-info">
+                            <h2 class="experience-role">AI Integration & QA Associate </h2>
+                            <h3 class="experience-company">Stealth Startup</h3>
+                        </div>
+                        <div class="experience-date-badge">
+                            <span>Oct 2025 - Present</span>
+                        </div>
+                    </div>
+                    <div class="experience-card-body">
+                        <ul class="experience-highlights">
+                            <li>Managed end-to-end software maintenance using Anthropic Claude, overseeing
+                                the resolution of GitHub issues and technical debt to ensure optimal system performance.</li>
+                            <li>Optimized RAG workflows to improve AI-driven code suggestions and system accuracy.</li>
+                            <li>Performed technical code reviews on AI-generated pull requests to ensure alignment with 
+                                existing architectural patterns and security standards.
+                            </li>
+                        </ul>
+                        <div class="experience-tech-badges">
+                            <span class="tech-badge">AI-Augmented Development</span>
+                            <span class="tech-badge">Systems Debugging & QA</span>
+                            <span class="tech-badge">Git & SDLC Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-card-accent"></div>
+                <div class="experience-card-content">
+                    <div class="experience-card-header">
+                        <div class="experience-role-info">
+                            <h2 class="experience-role">Operations Assistant</h2>
+                            <h3 class="experience-company">MQ Steel Corp</h3>
+                        </div>
+                        <div class="experience-date-badge">
+                            <span>Jun 2022 - Present</span>
+                        </div>
+                    </div>
+                    <div class="experience-card-body">
+                        <ul class="experience-highlights">
+                            <li>Managed databases of 25+ clients and projects, maintaining 100% accuracy in record-keeping and 
+                                project tracking.</li>
+                            <li>Processed 50+ client payments monthly, handling all financial transactions and client communications.</li>
+                            <li>Collaborated with the operations team to streamline workflows, reducing project turnaround time by 15%.</li>
+                        </ul>
+                        <div class="experience-tech-badges">
+                            <span class="tech-badge">Operations & Project Tracking</span>
+                            <span class="tech-badge">Financial & Data Management</span>
+                            <span class="tech-badge">Workflow Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-card-accent"></div>
+                <div class="experience-card-content">
+                    <div class="experience-card-header">
+                        <div class="experience-role-info">
+                            <h2 class="experience-role">Freelance Developer</h2>
+                            <h3 class="experience-company">Self-Employed</h3>
+                        </div>
+                        <div class="experience-date-badge">
+                            <span>2023 - Present</span>
+                        </div>
+                    </div>
+                    <div class="experience-card-body">
+                        <ul class="experience-highlights">
+                            <li>Built custom web applications and automation tools for small businesses and startups
+                            </li>
+                            <li>Developed AI-powered solutions integrating LangChain and various LLM APIs</li>
+                            <li>Managed full project lifecycle from requirements gathering to deployment and maintenance
+                            </li>
+                        </ul>
+                        <div class="experience-tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">LangChain</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership">
+        <h1 class="section__title">Leadership</h1>
+        <div class="experience-cards-container">
+            <div class="experience-card leadership-card">
+                <div class="experience-card-accent leadership-accent"></div>
+                <div class="experience-card-content">
+                    <div class="experience-card-header">
+                        <div class="experience-role-info">
+                            <h2 class="experience-role">Treasurer / Event Coordinator</h2>
+                            <h3 class="experience-company">SIAM Student Chapter @ QC</h3>
+                        </div>
+                        <div class="experience-date-badge">
+                            <span>Aug 2024 - January 2025</span>
+                        </div>
+                    </div>
+                    <div class="experience-card-body">
+                        <ul class="experience-highlights">
+                            <li>Managed dual budgets of 25+ clients and projects, maintaining 100% accuracy in record-keeping
+                                and project tracking.
+                            </li>
+                            <li>Developed and presented quarterly financial reports to the executive board, ensuring transparency
+                                and informed budget decisions.
+                            </li>
+                            <li>Organizded 4+ professional development events per semester, including Python workshops and math competitions,
+                                engaging 20+ students consistently and increasing member participation by 30%.
+                            </li>
+                        </ul>
+                        <div class="experience-tech-badges">
+                            <span class="tech-badge leadership-badge">Financial Planning</span>
+                            <span class="tech-badge leadership-badge">Event Planning</span>
+                            <span class="tech-badge leadership-badge">Public Speaking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card leadership-card">
+                <div class="experience-card-accent leadership-accent"></div>
+                <div class="experience-card-content">
+                    <div class="experience-card-header">
+                        <div class="experience-role-info">
+                            <h2 class="experience-role">Technical Alumni Speaker</h2>
+                            <h3 class="experience-company">Chelsea Career and Technical Education High School</h3>
+                        </div>
+                        <div class="experience-date-badge">
+                            <span>Sep 2022 - June 2024</span>
+                        </div>
+                    </div>
+                    <div class="experience-card-body">
+                        <ul class="experience-highlights">
+                            <li>Delivered presentations to 100+ students on career paths in technology.</li>
+                            <li>Provided 1-on-1 mentorship and guidance to students interested in pursuing STEM fields; specifically
+                                IT or software development careers.
+                            </li>
+                            <li>Organized IT activities and Q&A sessions to engage students and foster interest in technology.
+                            </li>
+                        </ul>
+                        <div class="experience-tech-badges">
+                            <span class="tech-badge leadership-badge">Mentorship</span>
+                            <span class="tech-badge leadership-badge">Technical Speaking</span>
+                            <span class="tech-badge leadership-badge">Classroom Teaching</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies">
+        <h1 class="section__title">Technologies</h1>
+        <div class="tech-categories-container">
+            <!-- Languages -->
+            <div class="tech-category-card">
+                <div class="tech-category-header">
+                    <div class="tech-category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h2 class="tech-category-title">Languages</h2>
+                </div>
+                <div class="tech-items-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Java</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">C++</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">SQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="tech-category-card">
+                <div class="tech-category-header">
+                    <div class="tech-category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h2 class="tech-category-title">Frameworks</h2>
+                </div>
+                <div class="tech-items-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">React.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Spring Boot</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Scikit-learn</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">OpenCV</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">LangChain</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="tech-category-card">
+                <div class="tech-category-header">
+                    <div class="tech-category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h2 class="tech-category-title">Databases</h2>
+                </div>
+                <div class="tech-items-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">PostgreSQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">MongoDB</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">MySQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">ChromaDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Utilities -->
+            <div class="tech-category-card">
+                <div class="tech-category-header">
+                    <div class="tech-category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="tech-category-title">Utilities</h2>
+                </div>
+                <div class="tech-items-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">Git/GitHub</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">VS Code</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Anthropic Claude</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">LLM Orchestration</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Cloudflare Workers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus Areas Section -->
+    <section id="focus-areas">
+        <div class="focus-container">
+            <div class="focus-header">
+                <div class="focus-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M12 2v4m0 12v4m10-10h-4M6 12H2" />
+                        <path d="M19.07 4.93l-2.83 2.83m-8.48 8.48l-2.83 2.83m0-14.14l2.83 2.83m8.48 8.48l2.83 2.83" />
+                    </svg>
+                </div>
+                <h2 class="focus-title">Focus Areas</h2>
+                <p class="focus-subtitle">Building the next generation of intelligent systems</p>
+            </div>
+            <div class="focus-items">
+                <div class="focus-item">
+                    <span class="focus-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10H12V2z" />
+                            <path d="M12 2a10 10 0 0 1 10 10" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </span>
+                    <span class="focus-item-text">LLM Integration & Orchestration</span>
+                </div>
+                <div class="focus-item">
+                    <span class="focus-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7" rx="1" />
+                            <rect x="14" y="3" width="7" height="7" rx="1" />
+                            <rect x="3" y="14" width="7" height="7" rx="1" />
+                            <rect x="14" y="14" width="7" height="7" rx="1" />
+                            <path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4" />
+                        </svg>
+                    </span>
+                    <span class="focus-item-text">Agentic AI Workflows</span>
+                </div>
+                <div class="focus-item">
+                    <span class="focus-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </span>
+                    <span class="focus-item-text">AI Automation Pipelines</span>
+                </div>
+                <div class="focus-item">
+                    <span class="focus-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                        </svg>
+                    </span>
+                    <span class="focus-item-text">RAG & Vector Systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &#169; 2025 Bryan Mejia. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
